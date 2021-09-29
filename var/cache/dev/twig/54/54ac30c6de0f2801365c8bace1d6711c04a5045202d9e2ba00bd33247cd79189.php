@@ -148,6 +148,6 @@ class __TwigTemplate_ea0c70705c9119e9999c345cf74470a2aa88aeef6d70b2c8b93d0a0e01f
         <button type=\"submit\" class=\"btn btn-primary\">Register</button>
     {{ form_end(registrationForm) }}
 {% endblock %}
-", "registration/register.html.twig", "/home/krchaos/Symfony/templates/registration/register.html.twig");
+", "registration/register.html.twig", "/home/quan/symfony-todo/templates/registration/register.html.twig");
     }
 }

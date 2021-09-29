@@ -32,3 +32,6 @@ services:
     App\Service\SiteUpdateManager:
         arguments:
             $adminEmail: 'quannmgch17583@fpt.edu.vn'
+
+#    App\MessageHandler\SmsNotificationHandler:
+#        tags: ['messenger.message_handler']

@@ -107,6 +107,6 @@ class __TwigTemplate_17fdad1b54d028a54fe78eee85a5c2399952cf4433c16931eddc1e26dae
             </ul>
         </div>
     </div>
-</nav>", "include/navbar.html.twig", "/home/krchaos/Symfony/templates/include/navbar.html.twig");
+</nav>", "include/navbar.html.twig", "/home/quan/symfony-todo/templates/include/navbar.html.twig");
     }
 }

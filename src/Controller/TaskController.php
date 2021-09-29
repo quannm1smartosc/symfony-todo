@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\Article;
 use App\Form\TaskType;
 
+
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
@@ -24,7 +25,11 @@ class TaskController extends AbstractController
         $form = $this->createForm(TaskType::class, $article);
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
+            /**
+             * @var Article $article
+             */
             $article = $form->getData();
+            $article->setAuthor($this->getUser());
             $em->persist($article);
             $em->flush();
             $this->addFlash('success', 'Added new task');
@@ -33,12 +38,12 @@ class TaskController extends AbstractController
         }
 
         return $this->render('/articles/new.html.twig', [
-            'form' => $form->createView()
+            'form' => $form->createView(),
         ]);
     }
     /**
      * @Route("/article/edit/{id}", name="edit_task")
-     * @IsGranted("ROLE_ADMIN")
+     * @IsGranted("edit", subject="article")
      */
     public function edit(
         Request $request,
@@ -63,6 +68,7 @@ class TaskController extends AbstractController
 
     /**
      * @Route("/delete/{id}", name="task_delete")
+     * @IsGranted("edit", subject="id")
      */
     public function delete(
         Article $id,

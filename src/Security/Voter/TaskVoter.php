@@ -34,7 +34,7 @@ class TaskVoter extends Voter
         }
 
         // ... (check conditions and return true to grant permission) ...
-        if ($this->security->isGranted('ROLE_ADMIN')) {
+        if ($this->security->isGranted('ROLE_ADMIN') || $subject->getAuthor() === $user) {
             return true;
         }
 

@@ -135,6 +135,6 @@ class __TwigTemplate_4cbf6b4d7078ed7a760c2db6db57be1e615cd5ef3c60f98c975a76d8f59
     {{ form_widget(form) }}
     {{ form_end(form) }}
 
-{% endblock %}", "articles/new.html.twig", "/home/krchaos/Symfony/templates/articles/new.html.twig");
+{% endblock %}", "articles/new.html.twig", "/home/quan/symfony-todo/templates/articles/new.html.twig");
     }
 }

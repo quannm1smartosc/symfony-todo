@@ -59,6 +59,6 @@ class __TwigTemplate_52000e34d9815ee5f07fb2beabe4c72969b71fddbfdcc961f7ba85cdbb3
 
     public function getSourceContext()
     {
-        return new Source("", "security/register.html.twig", "/home/krchaos/Symfony/templates/security/register.html.twig");
+        return new Source("", "security/register.html.twig", "/home/quan/symfony-todo/templates/security/register.html.twig");
     }
 }

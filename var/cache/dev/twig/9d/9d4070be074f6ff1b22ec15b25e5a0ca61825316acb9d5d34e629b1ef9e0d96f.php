@@ -252,6 +252,6 @@ class __TwigTemplate_6b62103cb87db323ac8dd73f023f2ff02b826a5088ed7d489174df0f56f
 
 {% block javascripts %}
     <script src=\"/js/main.js\"></script>
-{% endblock %}", "articles/index.html.twig", "/home/krchaos/Symfony/templates/articles/index.html.twig");
+{% endblock %}", "articles/index.html.twig", "/home/quan/symfony-todo/templates/articles/index.html.twig");
     }
 }

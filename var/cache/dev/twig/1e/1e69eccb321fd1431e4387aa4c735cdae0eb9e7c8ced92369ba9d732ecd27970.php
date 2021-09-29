@@ -129,6 +129,6 @@ class __TwigTemplate_731a0581aaf1ba336c1ca8c52477893de19468189735dde942c28934e7d
     <p> {{ article.des }} </p>
     <hr>
     <a href=\"/index\">Back</a>
-{% endblock %}", "articles/show.html.twig", "/home/krchaos/Symfony/templates/articles/show.html.twig");
+{% endblock %}", "articles/show.html.twig", "/home/quan/symfony-todo/templates/articles/show.html.twig");
     }
 }

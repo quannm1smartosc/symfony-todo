@@ -7,10 +7,26 @@ use Symfony\Component\Mime\Email;
 
 class SiteUpdateManager
 {
+    /**
+     * @var MessageGenerator
+     */
     private $messageGenerator;
+
+    /**
+     * @var MailerInterface
+     */
     private $mailer;
+
+    /**
+     * @var string
+     */
     private $adminEmail;
 
+    /**
+     * @param MessageGenerator $messageGenerator
+     * @param MailerInterface $mailer
+     * @param string $adminEmail
+     */
     public function __construct(
         MessageGenerator $messageGenerator,
         MailerInterface $mailer,
